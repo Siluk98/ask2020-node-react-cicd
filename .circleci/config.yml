@@ -11,11 +11,11 @@ jobs:
       - node/with-cache:
           steps:
              - run:
-               command: npm install
-               working_directory: ./server
+                 command: npm install
+                 working_directory: ./server
              - run:
-               command: npm test
-               working_directory: ./server
+                 command: npm test
+                 working_directory: ./server
   client:
     executor:
       name: node/default
